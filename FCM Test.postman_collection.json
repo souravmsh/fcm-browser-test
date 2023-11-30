@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "4a340193-3ee6-4863-96cf-0119c885725f",
+		"name": "FCM Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18556663"
+	},
+	"item": [
+		{
+			"name": "Send PUSH",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "key=AAAAAFq70T8:APA91bFVe5inYE4c5znEVMiqNVneOnVpZyKe6VaWED-CMOnPzBqmQMMMy2K5HM_2ugx_81LySXuDdnJk5dS4LlYCs_UvNvpN6OoVmdfNbER4RA5E9Dlmd0aywPlubGS6MnRHPiSNta-4",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n \"to\" : \"d4TGY6_Mx0DsJ_XKXB0QLv:APA91bEF1N-4GbMF07oEkYstyaXeNTp8L14GcktUvZVu0KZUlibvtXF7fHuXrhQMmokUee28PEqMUtlWR_EpwbZHp3Fe7SKf0PBOf3Ujqn6J5T5-4bTfsWbI0pX9pEdV_phgMabavRKt\",\n \"notification\" : {\n     \"body\" : \"Body of Your Notification\",\n     \"title\": \"Title of Your Notification\"\n }\n}"
+				},
+				"url": {
+					"raw": "https://fcm.googleapis.com/fcm/send",
+					"protocol": "https",
+					"host": [
+						"fcm",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"fcm",
+						"send"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
